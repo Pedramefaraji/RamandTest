@@ -15,8 +15,9 @@ using RamandTestSolution.Application.Features.User.Queries;
 
 namespace RamandTestSolution.WebAPI.Controllers.v1
 {
-    [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
+    [ApiVersion("1")]
+    [ApiVersion("2")]
     [ApiController]
     public class UserController : ApiController
     {
@@ -28,6 +29,7 @@ namespace RamandTestSolution.WebAPI.Controllers.v1
 
         [HttpPost]
         [AllowAnonymous]
+        [MapToApiVersion("1")]
         public async Task<ActionResult<string>> Login(Application.Features.User.Commands.Login login)
         {
             var User = await Mediator.Send(login);
@@ -37,6 +39,8 @@ namespace RamandTestSolution.WebAPI.Controllers.v1
         }
         [HttpGet]
         [Authorize]
+        [MapToApiVersion("1")]
+        [MapToApiVersion("2")]
         public async Task<ActionResult<List<Domain.Entities.Users>>> GetAllUser()
         {
             return await Mediator.Send(new GetAllUser());

@@ -13,8 +13,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using RamandTestSolution.Application;
 using RamandTestSolution.Persistence;
+using RamandTestSolution.WebAPI.Filters.Swagger;
+using Swashbuckle.AspNetCore.SwaggerGen;
+
 
 namespace RamandTestSolution.WebAPI
 {
@@ -37,6 +41,8 @@ namespace RamandTestSolution.WebAPI
                 config.AssumeDefaultVersionWhenUnspecified = true;
                 config.ReportApiVersions = true;
             });
+
+
             #endregion
 
             #region JWT Configuration
@@ -56,7 +62,9 @@ namespace RamandTestSolution.WebAPI
             #endregion
 
             #region Swagger Configuration
-            services.AddSwaggerGen();
+            services.AddSwaggerGen(configureSwaggerGen);
+
+
             #endregion
 
             #region Persistence Dependency
@@ -74,10 +82,12 @@ namespace RamandTestSolution.WebAPI
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             #region SwaggerConfiguration
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
+            app.UseSwagger(c => { c.RouteTemplate = "dev/swagger/{documentName}/swagger.json"; });
+            app.UseSwaggerUI(options =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                options.SwaggerEndpoint("/dev/swagger/v1/swagger.json", "API v1");
+                options.SwaggerEndpoint("/dev/swagger/v2/swagger.json", "API v2");
+                options.RoutePrefix = "dev/swagger";
             });
             #endregion
 
@@ -99,5 +109,51 @@ namespace RamandTestSolution.WebAPI
                 endpoints.MapControllers();
             });
         }
+        private static void configureSwaggerGen(SwaggerGenOptions options)
+        {
+            addSwaggerDocs(options);
+
+            options.OperationFilter<RemoveVersionFromParameter>();
+            options.DocumentFilter<ReplaceVersionWithExactValueInPath>();
+
+            options.DocInclusionPredicate((version, desc) =>
+            {
+                if (!desc.TryGetMethodInfo(out var methodInfo))
+                    return false;
+
+                var versions = methodInfo
+                   .DeclaringType?
+               .GetCustomAttributes(true)
+               .OfType<ApiVersionAttribute>()
+               .SelectMany(attr => attr.Versions);
+
+                var maps = methodInfo
+                   .GetCustomAttributes(true)
+               .OfType<MapToApiVersionAttribute>()
+               .SelectMany(attr => attr.Versions)
+               .ToList();
+
+                return versions?.Any(v => $"v{v}" == version) == true
+                         && (!maps.Any() || maps.Any(v => $"v{v}" == version));
+            });
+        }
+
+        private static void addSwaggerDocs(SwaggerGenOptions options)
+        {
+            options.SwaggerDoc("v1", new OpenApiInfo
+            {
+                Version = "v1",
+                Title = "Ramand Test Api v1",
+                Description = "API for test",
+            });
+
+            options.SwaggerDoc("v2", new OpenApiInfo
+            {
+                Version = "v2",
+                Title = "Ramand Test Api v2",
+                Description = "API for test",
+            });
+        }
+
     }
 }

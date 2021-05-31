@@ -17,6 +17,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RamandTestSolution.Persiste
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RamandTestSolution.WebAPI", "RamandTestSolution.WebAPI\RamandTestSolution.WebAPI.csproj", "{A093408E-0962-4B32-BEC8-B05D40229B02}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database Scripts", "Database Scripts", "{ACD42C4A-6907-4632-A80D-0D9ED8C2FC1F}"
+	ProjectSection(SolutionItems) = preProject
+		Query 1.sql = Query 1.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +53,7 @@ Global
 		{266A4CF0-B335-4B3A-9B1D-14D032AFC109} = {48B18C5C-84FA-403D-82EC-17DFAA38C727}
 		{71BD25D6-7726-4DF4-A7B7-8236E2D96F4A} = {48B18C5C-84FA-403D-82EC-17DFAA38C727}
 		{A093408E-0962-4B32-BEC8-B05D40229B02} = {48B18C5C-84FA-403D-82EC-17DFAA38C727}
+		{ACD42C4A-6907-4632-A80D-0D9ED8C2FC1F} = {643A416F-BC2F-4D32-B1E0-44AAC985D54F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9971EE30-9107-4E3C-8651-99F65EF65EAE}

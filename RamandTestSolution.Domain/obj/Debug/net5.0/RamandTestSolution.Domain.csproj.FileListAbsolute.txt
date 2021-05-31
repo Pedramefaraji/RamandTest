@@ -1,0 +1,8 @@
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Domain\bin\Debug\net5.0\RamandTestSolution.Domain.deps.json
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Domain\bin\Debug\net5.0\RamandTestSolution.Domain.dll
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Domain\bin\Debug\net5.0\RamandTestSolution.Domain.pdb
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Domain\obj\Debug\net5.0\RamandTestSolution.Domain.AssemblyInfoInputs.cache
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Domain\obj\Debug\net5.0\RamandTestSolution.Domain.AssemblyInfo.cs
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Domain\obj\Debug\net5.0\RamandTestSolution.Domain.csproj.CoreCompileInputs.cache
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Domain\obj\Debug\net5.0\RamandTestSolution.Domain.dll
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Domain\obj\Debug\net5.0\RamandTestSolution.Domain.pdb

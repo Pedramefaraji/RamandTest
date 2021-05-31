@@ -1,0 +1,17 @@
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\bin\Debug\net5.0\RamandTestSolution.Persistence.deps.json
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\bin\Debug\net5.0\RamandTestSolution.Persistence.dll
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\bin\Debug\net5.0\RamandTestSolution.Persistence.pdb
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\obj\Debug\net5.0\RamandTestSolution.Persistence.csprojAssemblyReference.cache
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\obj\Debug\net5.0\RamandTestSolution.Persistence.AssemblyInfoInputs.cache
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\obj\Debug\net5.0\RamandTestSolution.Persistence.AssemblyInfo.cs
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\obj\Debug\net5.0\RamandTestSolution.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\obj\Debug\net5.0\RamandTestSolution.Persistence.dll
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\obj\Debug\net5.0\RamandTestSolution.Persistence.pdb
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\bin\Debug\net5.0\RamandTestSolution.Application.dll
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\bin\Debug\net5.0\RamandTestSolution.Domain.dll
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\bin\Debug\net5.0\RamandTestSolution.Application.pdb
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\bin\Debug\net5.0\RamandTestSolution.Domain.pdb
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\obj\Debug\net5.0\RamandTestSolution.Persistence.csproj.CopyComplete
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\bin\Debug\net5.0\RamandTestSolution.Persistence.runtimeconfig.json
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\bin\Debug\net5.0\RamandTestSolution.Persistence.runtimeconfig.dev.json
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Persistence\obj\Debug\net5.0\RamandTestSolution.Persistence.genruntimeconfig.cache

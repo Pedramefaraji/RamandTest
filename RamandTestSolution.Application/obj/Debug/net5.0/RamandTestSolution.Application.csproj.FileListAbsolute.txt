@@ -1,0 +1,12 @@
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Application\bin\Debug\net5.0\RamandTestSolution.Application.deps.json
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Application\bin\Debug\net5.0\RamandTestSolution.Application.dll
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Application\bin\Debug\net5.0\RamandTestSolution.Application.pdb
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Application\obj\Debug\net5.0\RamandTestSolution.Application.csprojAssemblyReference.cache
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Application\obj\Debug\net5.0\RamandTestSolution.Application.AssemblyInfoInputs.cache
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Application\obj\Debug\net5.0\RamandTestSolution.Application.AssemblyInfo.cs
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Application\obj\Debug\net5.0\RamandTestSolution.Application.csproj.CoreCompileInputs.cache
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Application\obj\Debug\net5.0\RamandTestSolution.Application.dll
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Application\obj\Debug\net5.0\RamandTestSolution.Application.pdb
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Application\bin\Debug\net5.0\RamandTestSolution.Domain.dll
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Application\bin\Debug\net5.0\RamandTestSolution.Domain.pdb
+C:\Users\PedrameFaraji\source\repos\RamandTestSolution\RamandTestSolution.Application\obj\Debug\net5.0\RamandTestSolution.Application.csproj.CopyComplete
